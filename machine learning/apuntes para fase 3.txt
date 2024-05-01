@@ -1,0 +1,26 @@
+REGRESIÓN LINEAL
+
+métricas más importantes para el modelo lineal:
+1) R^2, que es igual a SSMod/SStot
+2) varianza
+3) SStot = SSMod + SSres
+esto es:
+suma de cuadrados total = suma de cuadrados modelo + suma de cuadrados residuales
+
+
+TENER CUIDADO CON LA MULTICOLINEALIDAD
+
+Además tener en cuenta las siguientes medidas:
+MSE = error cuadrático medio
+RMSE = MSE^0.5 que es la raiz del MSE
+MAE
+
+REGRESIÓN LOGÍSTICA
+
+usar el chi cuadrado (variable dependiente categórica) y el anova (variable dependiente numérica) para quitar variables que aportan poco al modelo
+- eliminar si el chi-cuadrado es menor a 0.05
+- eliminar si el anova es menor a 0.05 (sí, lo mismo que el chi cuadrado)
+- usar también el valor de la información (IV), eliminar columnas si el valor de este dato es menor a 0.02 o mayor a 0.5
+- usar tambiém peso de la evidencia
+
+para evaluar el modelo tener en cuenta sobretodo el f1 score
